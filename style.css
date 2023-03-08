@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    min-width: min-content;
+}
+
+.ploca {
+    display: flex;
+    position: relative;
+    flex-flow: wrap;
+    min-height: 600px;
+    width: 600px;
+    background-image: url("slike/ploca.png");
+    background-size: cover;
+}
+
+.polja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 33%;
+    height: 200px;
+    /* cursor: none; */
+}
+
+.ploca_rezultata {
+    display: grid;
+    justify-items: center;
+}
+
+.slika, .rezultat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    font-size: 150px;
+    font-family: monospace;
+}
+
+.slika {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: "";
+}
+
+.red {
+    width: 150px;
+    height: 10px;
+    border-radius: 150px;
+    background-color: "";
+}
+
+.krizhover {
+    background-image: url("slike/krizic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 20%;
+}
+.krughover {
+    background-image: url("slike/kruzic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 20%;
+}
+
+.kruzic {
+    background-image: url("slike/kruzic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.krizic {
+    background-image: url("slike/krizic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.nerijeseno {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.nerijesen{
+    margin-left: 5px;
+}
+
+.crta {
+    display: none;
+    position: absolute;
+    top: 25px;
+    height: 550px;
+    background-color: red;
+    border: 5px solid red;
+}
